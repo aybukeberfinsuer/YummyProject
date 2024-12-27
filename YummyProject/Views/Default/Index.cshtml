@@ -5,71 +5,11 @@
 }
 
 <!-- Feature Section -->
-<section id="hero" class="hero section light-background">
-
-    <div class="container">
-        <div class="row gy-4 justify-content-center justify-content-lg-between">
-            <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
-                <p data-aos="fade-up" data-aos-delay="100">We are team of talented designers making websites with Bootstrap</p>
-                <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <a href="#book-a-table" class="btn-get-started">Booka a Table</a>
-                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-                </div>
-            </div>
-            <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-            </div>
-        </div>
-    </div>
-
-</section><!-- /Hero Section -->
+@Html.Action("DefaultFeature")
+<!-- /Hero Section -->
 <!-- About Section -->
-<section id="about" class="about section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>About Us<br></h2>
-        <p><span>Learn More</span> <span class="description-title">About Us</span></p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-        <div class="row gy-4">
-            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-                <img src="assets/img/about.jpg" class="img-fluid mb-4" alt="">
-                <div class="book-a-table">
-                    <h3>Book a Table</h3>
-                    <p>+1 5589 55488 55</p>
-                </div>
-            </div>
-            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
-                <div class="content ps-0 ps-lg-5">
-                    <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </p>
-                    <ul>
-                        <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                        <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                        <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-                    </ul>
-                    <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-                    </p>
-
-                    <div class="position-relative mt-4">
-                        <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
-                        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</section><!-- /About Section -->
+@Html.Action("DefaultAbout")
+<!-- /About Section -->
 <!-- Service Section -->
 <section id="why-us" class="why-us section light-background">
 
@@ -128,7 +68,7 @@
 <!-- Stats Section -->
 <section id="stats" class="stats section dark-background">
 
-    <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+    <img src="~/Template/yummy-red-1.0.0/assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
 
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
 
@@ -218,7 +158,7 @@
                 <div class="row gy-5">
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-1.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Magnam Tiste</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -229,7 +169,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-2.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Aut Luia</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -240,7 +180,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-3.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Est Eligendi</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -251,7 +191,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-4.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Eos Luibusdam</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -262,7 +202,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-5.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Eos Luibusdam</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -273,7 +213,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-6.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Laboriosam Direva</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -296,7 +236,7 @@
                 <div class="row gy-5">
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-1.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Magnam Tiste</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -307,7 +247,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-2.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Aut Luia</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -318,7 +258,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-3.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Est Eligendi</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -329,7 +269,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-4.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Eos Luibusdam</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -340,7 +280,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-5.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Eos Luibusdam</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -351,7 +291,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-6.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Laboriosam Direva</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -374,7 +314,7 @@
                 <div class="row gy-5">
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-1.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Magnam Tiste</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -385,7 +325,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-2.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Aut Luia</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -396,7 +336,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-3.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Est Eligendi</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -407,7 +347,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-4.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Eos Luibusdam</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -418,7 +358,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-5.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Eos Luibusdam</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -429,7 +369,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-6.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Laboriosam Direva</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -452,7 +392,7 @@
                 <div class="row gy-5">
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-1.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Magnam Tiste</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -463,7 +403,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-2.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Aut Luia</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -474,7 +414,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-3.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Est Eligendi</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -485,7 +425,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-4.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Eos Luibusdam</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -496,7 +436,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-5.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Eos Luibusdam</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -507,7 +447,7 @@
                     </div><!-- Menu Item -->
 
                     <div class="col-lg-4 menu-item">
-                        <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
+                        <a href="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-6.png" class="glightbox"><img src="~/Template/yummy-red-1.0.0/assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
                         <h4>Laboriosam Direva</h4>
                         <p class="ingredients">
                             Lorem, deren, trataro, filede, nerada
@@ -572,7 +512,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-2 text-center">
-                                <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                                <img src="~/Template/yummy-red-1.0.0/assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
                             </div>
                         </div>
                     </div>
@@ -596,7 +536,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-2 text-center">
-                                <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                                <img src="~/Template/yummy-red-1.0.0/assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
                             </div>
                         </div>
                     </div>
@@ -620,7 +560,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-2 text-center">
-                                <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                                <img src="~/Template/yummy-red-1.0.0/assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
                             </div>
                         </div>
                     </div>
@@ -644,7 +584,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-2 text-center">
-                                <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
+                                <img src="~/Template/yummy-red-1.0.0/assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
                             </div>
                         </div>
                     </div>
@@ -690,7 +630,7 @@
             </script>
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
+                <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(~/Template/yummy-red-1.0.0/assets/img/events-1.jpg)">
                     <h3>Custom Parties</h3>
                     <div class="price align-self-start">$99</div>
                     <p class="description">
@@ -698,7 +638,7 @@
                     </p>
                 </div><!-- End Event item -->
 
-                <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
+                <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(~/Template/yummy-red-1.0.0/assets/img/events-2.jpg)">
                     <h3>Private Parties</h3>
                     <div class="price align-self-start">$289</div>
                     <p class="description">
@@ -706,7 +646,7 @@
                     </p>
                 </div><!-- End Event item -->
 
-                <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
+                <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(~/Template/yummy-red-1.0.0/assets/img/events-3.jpg)">
                     <h3>Birthday Parties</h3>
                     <div class="price align-self-start">$499</div>
                     <p class="description">
@@ -714,7 +654,7 @@
                     </p>
                 </div><!-- End Event item -->
 
-                <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-4.jpg)">
+                <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(~/Template/yummy-red-1.0.0/assets/img/events-4.jpg)">
                     <h3>Wedding Parties</h3>
                     <div class="price align-self-start">$899</div>
                     <p class="description">
@@ -745,7 +685,7 @@
             <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-member">
                     <div class="member-img">
-                        <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                        <img src="~/Template/yummy-red-1.0.0/assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
                             <a href=""><i class="bi bi-facebook"></i></a>
@@ -764,7 +704,7 @@
             <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                 <div class="team-member">
                     <div class="member-img">
-                        <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+                        <img src="~/Template/yummy-red-1.0.0/assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
                             <a href=""><i class="bi bi-facebook"></i></a>
@@ -783,7 +723,7 @@
             <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                 <div class="team-member">
                     <div class="member-img">
-                        <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+                        <img src="~/Template/yummy-red-1.0.0/assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
                         <div class="social">
                             <a href=""><i class="bi bi-twitter-x"></i></a>
                             <a href=""><i class="bi bi-facebook"></i></a>
@@ -817,7 +757,7 @@
 
         <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
+            <div class="col-lg-4 reservation-img" style="background-image: url(~/Template/yummy-red-1.0.0/assets/img/reservation.jpg);"></div>
 
             <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
                 <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
@@ -903,14 +843,14 @@
                 }
             </script>
             <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-1.jpg"><img src="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-2.jpg"><img src="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-3.jpg"><img src="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-4.jpg"><img src="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-5.jpg"><img src="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-6.jpg"><img src="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-7.jpg"><img src="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-8.jpg"><img src="~/Template/yummy-red-1.0.0/assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
