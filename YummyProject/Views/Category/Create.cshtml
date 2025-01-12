@@ -1,0 +1,22 @@
+﻿@model YummyProject.Models.Category
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Create</h2>
+
+
+
+<form method="post">
+
+    <label> Category Name</label>
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.CategoryName)
+    </p>
+    <br />
+
+    <button class="btn btn-outline-success">Submit </button>
+
+</form>

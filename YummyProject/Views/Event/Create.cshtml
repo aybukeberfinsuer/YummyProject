@@ -1,0 +1,48 @@
+﻿@model YummyProject.Models.Event
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Create An Event !</h2>
+
+
+<form method="post">
+
+    <label> Image Url</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.ImageUrl)
+    </p>
+    <br />
+
+    <label> Title</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Title)
+    </p>
+
+    <br />
+
+    <label> Description</label>
+    @Html.TextAreaFor(x => x.Description, 5, 1, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Description)
+    </p>
+    <br />
+
+    <label>Price</label>
+    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Price)
+    </p>
+    <br />
+
+
+    
+    <br />
+
+
+    <button class="btn btn-outline-success">Submit </button>
+
+</form>
