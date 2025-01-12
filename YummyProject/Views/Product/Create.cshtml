@@ -1,0 +1,56 @@
+﻿@model YummyProject.Models.Product
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Create Product</h2>
+
+<form method="post">
+
+    <label> Image Url</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.ImageUrl)
+    </p>
+    <br />
+
+    <label> Product Name</label>
+    @Html.TextBoxFor(x => x.Productname, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Productname)
+    </p>
+
+    <br />
+
+    <label> Ingredients</label>
+    @Html.TextAreaFor(x => x.Ingredients, 5, 1, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Ingredients)
+    </p>
+    <br />
+
+    <label>Price</label>
+    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Price)
+    </p>
+    <br />
+
+
+    <label> Category</label>
+    @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.categories, new { @class = "form-control " })
+
+
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.CategoryId)
+    </p>
+    <br />
+
+
+
+  
+
+    <button class="btn btn-outline-success">Submit </button>
+
+</form>
