@@ -131,6 +131,8 @@
     <Compile Include="Context\YummyContext.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ChefController.cs" />
+    <Compile Include="Controllers\ChefSocialController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\EventController.cs" />
@@ -138,6 +140,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\UILayoutController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -161,6 +164,14 @@
     <Compile Include="Migrations\202412302034241_socialmedia_table_Added.cs" />
     <Compile Include="Migrations\202412302034241_socialmedia_table_Added.Designer.cs">
       <DependentUpon>202412302034241_socialmedia_table_Added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202501131122020_IsActivePropAddedToService.cs" />
+    <Compile Include="Migrations\202501131122020_IsActivePropAddedToService.Designer.cs">
+      <DependentUpon>202501131122020_IsActivePropAddedToService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202501131225073_deneme.cs" />
+    <Compile Include="Migrations\202501131225073_deneme.Designer.cs">
+      <DependentUpon>202501131225073_deneme.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\About.cs" />
@@ -500,6 +511,15 @@
     <Content Include="Views\Event\Create.cshtml" />
     <Content Include="Views\Default\DefaultEvent.cshtml" />
     <Content Include="Views\Event\Update.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\Services\Create.cshtml" />
+    <Content Include="Views\Services\Update.cshtml" />
+    <Content Include="Views\Default\DefaultService.cshtml" />
+    <Content Include="Views\Chef\Index.cshtml" />
+    <Content Include="Views\Chef\Create.cshtml" />
+    <Content Include="Views\ChefSocial\Index.cshtml" />
+    <Content Include="Views\ChefSocial\Create.cshtml" />
+    <Content Include="Views\ChefSocial\Update.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -546,6 +566,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202412302034241_socialmedia_table_Added.resx">
       <DependentUpon>202412302034241_socialmedia_table_Added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202501131122020_IsActivePropAddedToService.resx">
+      <DependentUpon>202501131122020_IsActivePropAddedToService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202501131225073_deneme.resx">
+      <DependentUpon>202501131225073_deneme.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

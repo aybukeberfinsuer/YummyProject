@@ -1,0 +1,43 @@
+﻿@model YummyProject.Models.Service
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Edit</h2>
+
+
+<form method="post">
+
+    @Html.HiddenFor(x=>x.ServiceId)
+
+    <label> Title</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Title)
+    </p>
+
+    <br />
+
+    <label> Description</label>
+    @Html.TextAreaFor(x => x.Description, 5, 1, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Description)
+    </p>
+    <br />
+
+    <label>Icon (Please enter icon bootstrap codes)</label>
+    @Html.TextBoxFor(x => x.Icon, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Icon)
+    </p>
+    <br />
+
+
+
+    <br />
+
+
+    <button class="btn btn-outline-success">Submit </button>
+
+</form>

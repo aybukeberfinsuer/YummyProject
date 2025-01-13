@@ -1,0 +1,40 @@
+﻿@model YummyProject.Models.ChefSocial
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Update</h2>
+
+
+<form method="post">
+    @Html.HiddenFor(x => x.ChefSocialId)
+
+    @Html.HiddenFor(x => x.ChefId)
+
+    <label>Name</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Name)
+    </p>
+    <br />
+
+    <label> Title</label>
+    @Html.TextBoxFor(x => x.Icon, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Icon)
+    </p>
+    <br />
+
+    <label> Description</label>
+    @Html.TextBoxFor(x => x.Url, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Url)
+    </p>
+    <br />
+
+
+
+    <button class="btn btn-outline-success">Submit </button>
+
+</form>

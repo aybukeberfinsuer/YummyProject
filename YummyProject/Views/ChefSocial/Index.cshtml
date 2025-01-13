@@ -1,0 +1,42 @@
+﻿@model List<YummyProject.Models.ChefSocial>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+    int count = 0;
+    int chefId = ViewBag.ChefId != null ? (int)ViewBag.ChefId : 0;  // ChefId'yi ViewBag'den alıyoruz
+}
+
+<h2>Chef Social Media</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Icon</th>
+            <th>Url</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            count++;
+            <tr>
+                <td>@count</td>
+                <td>@item.Name</td>
+                <td>@item.Icon</td>
+                <td>@item.Url</td>
+
+                <td><a href="/ChefSocial/Delete/@item.ChefSocialId" class="btn btn-outline-danger">Delete</a></td>
+                <td><a href="/ChefSocial/Update/@item.ChefSocialId" class="btn btn-outline-warning">Update</a></td>
+            </tr>
+            chefId = @item.ChefId;  // Son öğeyi aldıktan sonra chefId'yi güncelliyoruz
+        }
+    </tbody>
+</table>
+
+<br />
+<a href="/ChefSocial/Create/@chefId" class="btn btn-primary">Add new social media!</a>
