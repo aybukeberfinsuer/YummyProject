@@ -1,0 +1,55 @@
+﻿@model YummyProject.Models.Testimonial
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Update</h2>
+
+
+<form method="post">
+
+    @Html.HiddenFor(x=>x.TestimonialId)
+
+    <label> Image Url</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.ImageUrl)
+    </p>
+    <br />
+
+    <label> Name Surname</label>
+    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.NameSurname)
+    </p>
+
+    <br />
+
+    <label> Title</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Title)
+    </p>
+    <br />
+
+    <label>Comment</label>
+    @Html.TextAreaFor(x => x.Comment, 5, 1, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Comment)
+    </p>
+    <br />
+
+    <label> Rating ( enter number) </label>
+    @Html.TextBoxFor(x => x.Rating, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Rating)
+    </p>
+    <br />
+
+    <br />
+
+
+    <button class="btn btn-outline-success">Submit </button>
+
+</form>

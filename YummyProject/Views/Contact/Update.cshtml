@@ -1,0 +1,49 @@
+﻿@model YummyProject.Models.ContactInfo
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Update</h2>
+
+<form method="post">
+    @Html.HiddenFor(x => x.ContactInfoId)
+
+    <label>Adress </label>
+    @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Address)
+    </p>
+    <br />
+
+    <label> Email</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.Email)
+    </p>
+    <br />
+
+    <label> Phone Number</label>
+    @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.PhoneNumber)
+    </p>
+    <br />
+
+    <label> Map Url</label>
+    @Html.TextAreaFor(x => x.MapUrl, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.MapUrl)
+    </p>
+    <br />
+
+    <label> Open Hours</label>
+    @Html.TextAreaFor(x => x.openHours, new { @class = "form-control" })
+    <p class="text-danger">
+        @Html.ValidationMessageFor(x => x.openHours)
+    </p>
+    <br />
+
+    <button class="btn btn-outline-success">Submit </button>
+
+</form>
