@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity;
 using System.Web;
 using System.Web.Mvc;
 using YummyProject.Context;
+using Microsoft.Ajax.Utilities;
 
 namespace YummyProject.Controllers
 {
@@ -49,6 +51,20 @@ namespace YummyProject.Controllers
             return PartialView(values);
 
         }
-       
-    }
+
+
+		public PartialViewResult DefaultChefs()
+		{
+			var values = context.Chefs.Include(c => c.ChefSocial).ToList();
+			return PartialView(values);
+		}
+
+
+        public ActionResult Booking()
+        {
+            return View();
+        }
+
+
+	}
 }

@@ -1,0 +1,45 @@
+﻿@model List<YummyProject.Models.Booking>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2>Reservations</h2>
+
+@using (Html.BeginForm("ApproveReservation", "Booking", FormMethod.Post))
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Booking Date</th>
+                <th>Person Count</th>
+                <th>Message Content</th>
+                <th>Is Approved</th>
+                <th>Select for Approval</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var booking in Model)
+            {
+                <tr>
+                    <td>@booking.BookingId</td>
+                    <td>@booking.Name</td>
+                    <td>@booking.Email</td>
+                    <td>@booking.PhoneNumber</td>
+                    <td>@booking.BookingDate.ToShortDateString()</td>
+                    <td>@booking.PersonCount</td>
+                    <td>@booking.MessageContent</td>
+                    <td>@booking.IsApproved</td>
+                    <td>
+                        <input type="checkbox" name="approvedBookings" value="@booking.BookingId" @(booking.IsApproved ? "checked" : "") />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-primary">Update Reservations</button>
+}
